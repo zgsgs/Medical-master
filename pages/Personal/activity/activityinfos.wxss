@@ -1,0 +1,18 @@
+/* pages/Personal/activity/activityinfos.wxss */
+@import "../../../plug-ins/wxParse/wxParse.wxss";
+page{background-color: #fff;}
+.activityinfos{width: 100%;height: 100%;color: #333333;}
+.activityinfos .title{line-height: 80rpx;font-size: 32rpx;padding: 0 3%;border-bottom: 1px #eeeeee solid;}
+.infos{width: 94%;margin: auto;font-size: 28rpx;}
+.infos view{padding-left:60rpx;line-height: 70rpx;border-bottom: 1px #eeeeee solid;position: relative;}
+.infos view:before{content: "";display: block;width: 60rpx;height: 60rpx;position: absolute;top: 5rpx;left: 0;background-position: center;background-repeat: no-repeat;background-size: 75%;}
+.infos view.atime{color: #39cdac;}
+.infos view.integral:before{background-image: url(https://xcx.yzw0525.com/images/icon_integral.svg);}
+.infos view.atime:before{background-image: url(https://xcx.yzw0525.com/images/icon_time.svg);}
+.infos view.location:before{background-image: url(https://xcx.yzw0525.com/images/icon_location.svg);}
+.infos view.hotline:before{background-image: url(https://xcx.yzw0525.com/images/icon_tel.svg);}
+.infos view .tel_btn{width: 60rpx;height: 60rpx;position: absolute;top: 7rpx;right: 10rpx;background-position: center;background-repeat: no-repeat;background-size: 70%;background-image: url(https://xcx.yzw0525.com/images/icon_tel02.svg);background-color: #39cdac;border-radius: 50%;overflow:hidden;}
+.infos view text{color: #888888;}
+.body{width: 96%;margin: auto;}
+.body .body-t{font-size: 34rpx;text-align: center;line-height: 80rpx;color: #333333;}
+.body .body-c{font-size: 28rpx;color: #888888;line-height: 40rpx;margin-bottom: 20rpx;}

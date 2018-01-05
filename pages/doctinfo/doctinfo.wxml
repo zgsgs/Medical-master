@@ -1,0 +1,38 @@
+<!--doctinfo.wxml-->
+<view class="container">
+  <import src="/pages/public.wxml"/>
+  <view class="doctinfos">
+    <view class="d-top"></view>
+    <view class="d-face"><image src="{{doctinfo[0].doctorface}}" mode="widthFix"></image></view>
+    <view class="d-name" >
+      <view class="zxl">咨询量:2364</view>
+      <view class="name">{{doctinfo[0].doctorName}}</view>
+      <view class="ghl">挂号量:2364</view>
+    </view>
+  </view>
+  <view class="introduce">
+    <view class="d-title"><span>职称:</span>{{doctinfo[0].doctorTitle}}</view>
+    <view class="d-skilful"><span>擅长:</span>{{doctinfo[0].doctorIntrodution}}</view>
+    
+  </view>
+  <view class="comment-title">用户评价</view>
+  <view class="comment">
+    <view class="c-list" wx:for="{{commentlist}}" wx:key="index">
+      <view class="c-l-face"><image src="{{commentlist[index].face}}"></image></view>
+      <view class="c-l-body">
+        <view class="c-l-b-head">
+          <view class="c-l-b-h-name">{{commentlist[index].title}} <view class="title {{satisfied[commentlist[index].satisfied]}}">很满意</view></view>
+          <view class="c-l-b-h-zan">{{commentlist[index].addtime}}</view>
+        </view>
+        <view class="c-l-b-content">{{commentlist[index].contetn}}</view>
+      </view>
+    </view>
+    <!--c-list end-->
+    <view style="clear: both;"></view>
+    <view bindtap="onLoadMoreDoctList" wx:if="{{is_more}}"  class="more">展开更多评价</view>
+    <view wx:if="{{is_loadnull}}"  class="loadnull"><text>暂无更多数据</text></view>
+  </view>
+  <!--comment end-->
+<template is="hospitalinfo" />
+<template is="foot" />
+</view>

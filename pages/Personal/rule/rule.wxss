@@ -1,0 +1,10 @@
+/* pages/Personal/rule/rule.wxss */
+.ruletitle{line-height: 90rpx;font-size: 32rpx;color: #333333;padding-left: 25rpx;position: relative;}
+.ruletitle::before{content: "";width: 0rpx;height: 50rpx;border-left:#39cdac solid 3px; }
+
+.ruleul{width:100%;padding: 20rpx 2%; background-color: #fff;}
+.ruleli{width: 100%;margin: auto;border-bottom: #eeeeee 1px solid;padding: 10rpx;}
+.ruleli .title{font-size: 32rpx;color: #39cdac;line-height: 60rpx;}
+.ruleli .title text{font-size: 40rpx;margin-right: 10rpx;}
+ .body{font-size: 28rpx;color: #888888;line-height: 50rpx;}
+.zxbtn{width: 77%;margin: 20rpx auto;border: none;background-color: #39cdac;color: #fff;letter-spacing: 4rpx;}

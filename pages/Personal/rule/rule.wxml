@@ -1,0 +1,59 @@
+<!--pages/Personal/rule/rule.wxml-->
+<view class="ruletitle">
+  积分获取方式
+</view>
+<view class="ruleul">
+  <view class="ruleli">
+    <view class="title"><text>1.</text>基础健康积分</view>
+    <view class="body">入会审核通过后，可送获得志愿者基础积分奖励10分。</view>  
+  </view>
+  <view class="ruleli">
+    <view class="title"><text>2.</text>健康传递积分</view>
+    <view class="body">参与无锡医博中医肛肠医院推送的健康理念及的知识宣传一次集10分。</view>  
+  </view>
+  <view class="ruleli">
+    <view class="title"><text>3.</text>口碑宣传积分</view>
+    <view class="body">参与我们市场部义诊活动，积极参与活动宣传和服务的患者，即可成为我院的志愿者，参加一次活动也可获得10分积分。</view>  
+  </view>
+  <view class="ruleli">
+    <view class="title"><text>4.</text>活动积分</view>
+    <view class="body">
+      医院将不定期举办各类健康活动，活动期间志愿者可获得10个积分，可能包括且不限于以下所列类型：
+      <view>① 无锡市结直肠癌普查活动</view>
+      <view>② 医博肛肠学术专题月</view>
+      <view>③ 季节性养生产品</view>
+      <view>④ 医博肛肠医院周年庆健康周</view>
+      <view>⑤ 常运动、肠健康活动</view>
+    </view>  
+  </view>
+  <view class="ruleli">
+    <view class="title"><text>5.</text>特别贡献积分</view>
+    <view class="body">对于有特别贡献的志愿者，志愿者协会奖励10-50分不等。</view>  
+  </view>
+  <view class="ruleli">
+    <view class="title"><text>6.</text>志愿者邀请积分</view>
+    <view class="body">介绍其他人员入会并审核通过后，赠送相应的奖励积分，10分。</view>  
+  </view>
+</view>
+<view class="ruletitle">
+  积分兑换
+</view>
+<view class="ruleul">
+  <view class="ruleli">
+    <view class="title"><text>1.</text>积分换礼品</view>
+    <view class="body">志愿者可于每月积分日（20日-22日），凭志愿者证和身份证，到志愿者服务中心消费积分兑换当月礼品。具体礼品详情查询院内志愿者微信平台或电话咨询。每期礼品不同，志愿者可根据喜好选择。每期兑换礼品总数不限，单件礼品限兑3件。</view>  
+  </view>
+  <view class="ruleli">
+    <view class="title"><text>2.</text>年末积分大抽奖</view>
+    <view class="body">志愿者协会将于年末召开志愿者年终答谢会，邀请志愿者参加，并在全体志愿者监督下，现场抽取幸运大奖。获奖情况将于答谢会后在微信、微博和志愿者协会官微上公布。</view>  
+  </view>
+</view>
+<view class="ruletitle">
+  志愿者身份证明
+</view>
+<view class="ruleul">
+    <view class="body">1.志愿者采取统一由无锡医博中医肛肠医院颁发志愿者证和医博志愿者杯；</view>
+    <view class="body">2.为确保志愿者的权益得到保证，当志愿者资料发生变更（如地址、电话等联系方式）时，应及时通知志愿者协会会员中心，同时为确保您得到最好的会员服务，请如实填写您的个人资料；</view>
+    <view class="body">3.本章程由医博志愿者协会制定，协会在法律允许的范围内，对本章程享有最终解释权，并保留修改、重制之权利。</view>
+  <button open-type="contact" class="zxbtn">快速咨询</button>
+</view>

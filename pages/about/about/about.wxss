@@ -1,0 +1,8 @@
+/* pages/about/about/about.wxss */
+page{background: #fff;}
+.text-c{text-align: center;}
+.title{padding: 0 3%;font-size: 34rpx;color: #39cdac;line-height: 90rpx;}
+.content{padding: 0 3%; font-size: 32rpx;color: #888888;line-height: 50rpx;}
+
+.imglist{padding: 20rpx 3%;display:flex;justify-content:space-between;flex-wrap:wrap;}
+.imglist .img{width: 32%;float: left;}

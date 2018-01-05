@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/doctlist/doctlist",
+    "pages/doctinfo/doctinfo",
+    "pages/online/online",
+    "pages/about/about",
+    "pages/about/about/about",
+    "pages/about/contact/contact",
+    "pages/road/road",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/shopping/shopping",
+    "pages/shopping/shoppinginfos",
+    "pages/shopping/exchange/exchangesuccess",
+    "pages/noopen/noopen",
+    "pages/Personal/index",
+    "pages/Personal/appointment/appointment",
+    "pages/Personal/exchange/exchange",
+    "pages/Personal/exchange/exchangeinfos",
+    "pages/Personal/IntegrationDetails/IntegrationDetails",
+    "pages/Personal/activity/activity",
+    "pages/Personal/activity/activityinfos",
+    "pages/Personal/rule/rule",
+    "pages/swt/swt",
+    "pages/activity/wtwjjc/wtwjjc",
+    "pages/activity/wtcjjc/wtcjjc",
+    "pages/activity/qcsltc/qcsltc"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#39cdac",
+    "navigationBarTitleText": "无锡肛肠医院",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": false
+}

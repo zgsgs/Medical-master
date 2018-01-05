@@ -1,0 +1,16 @@
+<!--road.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="road">
+  <view class="title">无锡医博中医肛肠医院</view>
+  <map id="map" longitude="120.288650" latitude="31.569670" scale="18" polyline="{{polyline}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" marker="{{marker}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+  <view class="address">
+    <view class="title">医院地址</view>
+    <view class="p">无锡市五爱路85号</view>
+  </view>
+  <view class="route">
+    <view class="title">乘车路线</view>
+    <view class="p">20、82、10、1、508、73、211、112梁溪大桥（建设银行）站下，地铁2号线梁溪大桥站下</view>
+  </view>
+  
+</view>
+<template is="foot" />

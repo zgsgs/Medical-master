@@ -1,0 +1,9 @@
+/* pages/Personal/appointment/appointment.wxss */
+.appointmentlist{background-color: #fff;padding: 10rpx 2%;position: relative;margin-bottom: 15rpx;}
+.appointmentlist .li{line-height: 70rpx;font-size: 32rpx;color: #333;}
+.appointmentlist .li text{color: #888;}
+.appointmentlist .li.yydate{position: absolute;top: 0;right: 2%;color: #888;}
+.appointmentlist .cancel_btn{width: 180rpx;line-height: 60rpx;float: right;  border: 1px solid #39cdac;border-radius: 50rpx; color: #39cdac;text-align: center;font-size: 32rpx; }
+.appointmentlist .cancel_btn.ongoing{border-color: blue;}
+.appointmentlist .cancel_btn.cancel{border-color: #888;color: #888;}
+.appointmentlist .cancel_btn.fail{border-color: #888;color: #888;}

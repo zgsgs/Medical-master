@@ -1,0 +1,4 @@
+/* pages/activity/wtwjjc/wtwjjc.wxss */
+page{background-color: #fff;}
+.reservation{width: 60%;margin: 15px auto;background-color: #39cdac;color: #fff;font-size: 32rpx;height: 90rpx;line-height:90rpx;letter-spacing: 2px;text-align: center;display: block;position: relative;padding-left: 60rpx;border-radius: 10rpx;}
+.reservation::before{content: "";display: block;width: 50rpx;height: 50rpx;position: absolute;top: 50%;left: 50%;margin-top:-21rpx;margin-left: -90rpx;background-image: url(https://xcx.yzw0525.com/images/activity_yy.svg);background-position: center;background-size: auto 100%;background-repeat: no-repeat;}

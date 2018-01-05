@@ -1,0 +1,24 @@
+<!--pages/shopping/exchange/exchangesuccess.wxml-->
+<view class="exchangesuccess" wx:if="{{OrdersInfos!=''}}">
+<view class="success">
+兑换成功
+</view>
+<view class="shoppinginfos">
+  <view class="title" hover-class='s-hover'>订单编号<text>{{OrdersInfos.OrderNumber}}</text></view>
+  <view class="title" hover-class='s-hover'>商品名称<text>{{OrdersInfos.shoppingname}}</text></view>
+  <view class="integral" hover-class='s-hover'>商品积分<text>{{OrdersInfos.PresentIntegral}}积分</text></view>
+  <view class="exchangetimes" hover-class='s-hover'>兑换时间<text>{{OrdersInfos.created_at}}</text></view>
+</view>
+<view class="shoppinginfos">
+  <view class="receivemethod" hover-class='s-hover'>领取方式<text>上门自取</text></view>
+  <view class="receiveaddress" hover-class='s-hover'>领取地址<text>无锡市五爱路85号无锡医博中医肛肠医院</text></view>
+</view>
+</view>
+<view class="More" wx:if="{{isMore}}">
+  <text style="background:none;">未查询到信息</text>
+</view>
+<view class="weui-loadmore" wx:if="{{isloadmore}}">
+  <icon class="weui-loading"/> 
+  <text class="weui-loadmore__tips">正在加载</text>
+</view>
+<navigator url="/pages/index/index" class="backhome" open-type="reLaunch">返回首页</navigator>

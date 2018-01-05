@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class="yebologo">
+  医博汇
+</view>
+<view class="login_btn">
+  <button type="primary"  bindtap="againLogin"> 登陆 </button>
+</view>

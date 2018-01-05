@@ -1,0 +1,11 @@
+/* pages/shopping/exchange/exchangesuccess.wxss */
+.success{width: 100%;height: 360rpx;background-color: #fff;text-align: center;font-size: 30rpx;padding-top: 260rpx;position: relative;}
+.success::before{content: "";display: block;position: absolute;top: 80rpx;left: 50%; width: 160rpx;height: 160rpx;background-color: #39cdac;margin-left: -80rpx;background-image:url(https://xcx.yzw0525.com/images/yebologo-white.svg);background-size: 80%;background-repeat: no-repeat;background-position: center;border-radius:50%; }
+
+.shoppinginfos{width: 100%;background-color: #fff;margin-top: 20rpx;}
+.shoppinginfos>view{width: 96%;margin: 10rpx auto 0;border-bottom: 1px solid #eeeeee;line-height: 80rpx;font-size: 30rpx;color: #333333;}
+.shoppinginfos>view text{float: right;color: #888888;}
+
+.backhome{width: 65%;margin: 60rpx auto 0;background-color: #39cdac;color: #fff;font-size: 32rpx;line-height:80rpx;letter-spacing: 4px;text-align: center;border-radius: 10rpx;}
+
+.s-hover{opacity: 0.8;}

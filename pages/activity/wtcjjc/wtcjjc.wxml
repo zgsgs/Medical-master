@@ -1,0 +1,11 @@
+<!--pages/activity/wtcjjc/wtcjjc.wxml-->
+<image src="https://xcx.yzw0525.com/images/activity_wtcjjc_01.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_wtcjjc_02.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_wtcjjc_03.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_wtcjjc_04.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_wtcjjc_05.jpg?" mode="widthFix"></image>
+
+<navigator url="/pages/online/online" open-type="navigate" class="reservation" hover-class="nav-hover">立即预约</navigator>
+
+<import src="/pages/public.wxml"/>
+<template is="foot" />

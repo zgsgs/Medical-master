@@ -1,0 +1,43 @@
+<!--pages/shopping/shoppinginfos.wxml-->
+<view class="weui-loadmore" style="margin-top:-3em;">
+    <icon class="weui-loading"/>
+</view>
+<view class="weui-loadmore" wx:if="{{isloadmore}}">
+    <icon class="weui-loading"/> 
+    <text class="weui-loadmore__tips">正在加载</text>
+</view>
+<view class="More" wx:if="{{isMore}}" style="margin-top:50%;">
+  <text>该商品不存在或已经下架</text>
+</view>
+<view wx:else>
+  <swiper class="litpic" style="height:{{swiperW}}px" indicator-dots="true" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#39cdac" autoplay="true" circular="true">
+    <swiper-item wx:for="{{ShoopingInfo.litpiclist}}" wx:key="{{index}}">
+      <image  src="{{ShoopingInfo.litpiclist[index]}}" ></image>
+    </swiper-item>
+  </swiper>
+  <view class="infos">
+    <view class="title">{{ShoopingInfo.title}}</view>
+    <view class="price">市价：¥{{ShoopingInfo.price}}</view>
+    <view class="integral">
+      <text>{{ShoopingInfo.integral}}</text> 积分
+    </view>
+    <view class="integralbalance">剩余：<text>{{integralbalance}}</text> 积分</view>
+  </view>
+  <view class="describe">
+    <view class="d-title">商品描述</view>
+    <view class="d-body">
+      <import src="../../plug-ins/wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+  </view>
+  <view class="exchange">
+    <form bindsubmit="MyfromSubmit" report-submit="true">
+      <input name="shoppingid" value="{{ShoopingInfo.id}}" class="hidden"/>
+      <input name="integral" value="{{ShoopingInfo.price}}" class="hidden"/>
+      <input name="title" value="{{ShoopingInfo.title}}" class="hidden"/>
+      <button class="exchange-btn" type="primary" form-type="submit" loading="{{loading}}" disabled="{{disabled}}" hover-class="other-button-hover"> 
+        {{exchangebtn}}
+      </button>
+    </form>
+  </view>
+</view>

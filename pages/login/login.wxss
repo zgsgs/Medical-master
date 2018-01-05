@@ -1,0 +1,6 @@
+/* pages/login/login.wxss */
+page{background-color: #fff;overflow: hidden;}
+.yebologo{width: 30%;height:160rpx;margin:15% auto 0; position: relative;padding-top: 180rpx;text-align: center;font-size: 32rpx;}
+.yebologo::before{content: "";display: block;position: absolute;top: 0;left: 50%; width: 160rpx;height: 160rpx;background-color: #39cdac;margin-left: -80rpx;background-image:url(https://xcx.yzw0525.com/images/yebologo-white.svg);background-size: 80%;background-repeat: no-repeat;background-position: center;border-radius:50%; }
+.login_btn{width: 50%;position: absolute;left: 25%;top: 50%;}
+.login_btn button{background-color: #39cdac;}

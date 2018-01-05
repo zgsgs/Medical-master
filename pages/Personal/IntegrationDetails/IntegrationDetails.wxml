@@ -1,0 +1,15 @@
+<!--pages/Personal/IntegrationDetails/IntegrationDetails.wxml-->
+<import src="/pages/public.wxml"/>
+  <view class="DetailsList" wx:for="{{Details}}" wx:key="{{index}}">
+    <view class="explain">{{Details[index].explain}}</view>
+    <view class="datetimes">{{Details[index].created_at}}</view>
+    <view class="integral">{{Details[index].integral}}</view>
+  </view>
+  <view class="More" wx:if="{{isMore}}">
+    <text>暂无更多信息</text>
+  </view>
+  <view class="weui-loadmore" wx:if="{{isloadmore}}">
+      <icon class="weui-loading"/> 
+      <text class="weui-loadmore__tips">正在加载</text>
+  </view>
+<template is="foot" />

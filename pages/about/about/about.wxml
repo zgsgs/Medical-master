@@ -1,0 +1,24 @@
+<!--pages/about/about/about.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="title text-c">
+  志愿者协会章程
+</view>
+<view class="content">
+  志愿者以“让医疗充满爱”为核心理念，竭诚为所有人提供宣传健康理念、知识，服务患者。志愿者协会采取自愿加会为准则，更好的了解自己享有的特别权益和尊贵服务，特制定本章程。
+</view>
+<view class="title">志愿者条件</view>
+<view class="content">
+  <view>一、参与无锡医博中医肛肠医院举办的各类公益活动（特别是在义诊时主动到现场参与活动宣传的人）</view>
+  <view>二、参与无锡医博中医肛肠医院推送的健康理念及知识宣传</view>
+  <view>三、对我院满意度较高的患者志愿者赠礼，符合条件的志愿者，在申请志愿者并通过审核后，医院会根据赠送相应的礼品。根据志愿者参与服务的次数进行计算！每参与一次活动可获得基础分10分！</view>
+</view>
+<view class="title" style="font-size: 30rpx;">首次注册也可获得10积分，并可随机获得以下赠礼：</view>
+<view class="content">
+健康小药箱、健康食疗书、季节生养生产品、免费肛门镜检查1次、水疗卡1张等（礼品具体根据具体情况确定）
+</view>
+<view class="imglist clear">
+  <image src="https://xcx.yzw0525.com/images/about_us_1.jpg" mode="widthFix" class="img"></image>
+  <image src="https://xcx.yzw0525.com/images/about_us_2.jpg" mode="widthFix" class="img"></image>
+  <image src="https://xcx.yzw0525.com/images/about_us_3.jpg" mode="widthFix" class="img"></image>
+</view>
+<template is="foot" />

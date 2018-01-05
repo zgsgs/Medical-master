@@ -1,0 +1,22 @@
+<!--exchange.wxml-->
+<navigator wx:for="{{Exchange}}" wx:key="{{index}}" class="exchangeList" url="/pages/Personal/exchange/exchangeinfos?OrderNumber={{Exchange[index].OrderNumber}}"  open-type="navigate">
+  <view class="image">
+    <image src="{{Exchange[index].litpic}}"></image>
+  </view>
+  <view class="infos">
+    <view class="title">{{Exchange[index].shoppingname}}</view>
+    <view class="state" wx:if="{{Exchange[index].state==0}}">未领取</view>
+    <view class="state" wx:if="{{Exchange[index].state==1}}">已领取</view>
+    <view class="state" wx:if="{{Exchange[index].state==2}}">超时未领取</view>
+    <view class="state" wx:if="{{Exchange[index].state==3}}">已撤销</view>
+    <view class="integral">{{Exchange[index].PresentIntegral}}积分</view>
+    <view class="dates">{{Exchange[index].created_at}}</view>
+  </view>
+</navigator>
+  <view class="More" wx:if="{{isMore}}">
+    <text style="background:#f5f5f5;">暂无更多信息</text>
+  </view>
+  <view class="weui-loadmore" wx:if="{{isloadmore}}">
+      <icon class="weui-loading"/> 
+      <text class="weui-loadmore__tips">正在加载</text>
+  </view>

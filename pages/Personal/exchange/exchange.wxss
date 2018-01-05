@@ -1,0 +1,10 @@
+/* exchange.wxss */
+.exchangeList{width: 100%;height: 200rpx;display: table; padding: 20rpx 2%;position: relative;background: #fff;box-sizing: border-box;}
+.exchangeList::after{content: "";display: block;width: 96%;height: 0;border-top:1px solid #eeeeee;position: absolute;bottom: 0;left: 2%;}
+.exchangeList::before{content: "";position: absolute;right: 4%;top: 50%; width: 25rpx;height: 25rpx;border-width: 2px 2px 0 0;border-color: #C8C8CD;border-style: solid;transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);}
+.exchangeList .image{width: 200rpx;height: 200rpx;position: absolute;left: 2%;top: 20rpx;}
+.exchangeList .infos{width: 100%;height: 200rpx; float: left;padding: 2% 3% 1% 220rpx;font-size: 32rpx;color: #333;}
+.exchangeList .infos .title{width:100%;height: 50rpx;line-height: 50rpx; font-size: 36rpx;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;word-break:break-all;}
+.exchangeList .infos .state{height: 50rpx;line-height: 50rpx; font-size: 32rpx;color: #39cdac;}
+.exchangeList .infos .integral{height: 58rpx;line-height: 58rpx;font-size: 30rpx;}
+.exchangeList .infos .dates{height: 20rpx;line-height: 20rpx;font-size: 28rpx;color: #888;}

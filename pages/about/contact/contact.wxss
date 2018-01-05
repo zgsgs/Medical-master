@@ -1,0 +1,23 @@
+/* pages/about/contact/contact.wxss */
+.main{background: #fff;margin-top: 20rpx;padding: 10rpx 2%; }
+.main .title{line-height: 80rpx;font-size: 32rpx;color: #333333;padding-left: 25rpx;position: relative;}
+.main .title::before{content: "";width: 0rpx;height: 40rpx;border-left:#39cdac solid 3px;position: absolute;left: 0;top: 20rpx; }
+.description{font-size: 30rpx;color: #555555;line-height: 50rpx;margin: 20rpx 0;}
+.Information{width: 100%;box-sizing: border-box;display:flex;justify-content:space-between;flex-wrap:wrap;}
+.Information > view{width: 50%;height: 140rpx;padding-left: 100rpx;line-height: 50rpx;position: relative;}
+.Information > view::before{content: "";width:80rpx;height: 80rpx;position: absolute;left: 0;margin-top: -40rpx;top: 50%;background-position: center;background-repeat: no-repeat;background-size: 70%; border-radius: 50%;}
+.Information > view.tel::before{background-color: #39cdac;background-image: url(https://xcx.yzw0525.com/images/contact-tel.svg);}
+.Information > view.weibo::before{background-color: #fed368;background-image: url(https://xcx.yzw0525.com/images/contact-weibo.svg);}
+.Information > view.wechat::before{background-color: #4bad45;background-image: url(https://xcx.yzw0525.com/images/contact-wechat.svg);}
+.Information > view.qq::before{background-color: #68bef8;background-image: url(https://xcx.yzw0525.com/images/contact-qq.svg);}
+.Information > view .t{color: #333;font-size:30rpx;margin-top: 20rpx;}
+.Information > view .d{color: #888;font-size:28rpx;}
+
+.address,.route{padding: 20rpx 0 30rpx 15%;position: relative;border-bottom: dashed #c6c6c6 1px;}
+.address .t,.route .t{color: #333;line-height: 60rpx;font-size: 32rpx;}
+.address .p,.route .p{color: #888;font-size:32rpx;}
+.address::before,.route::before{content: "";width: 80rpx;height: 80rpx;position: absolute;left: 1%;top:40rpx;background-position: center;background-repeat: no-repeat;background-size: 100%;}
+.address::before{background-image: url(https://xcx.yzw0525.com/images/address.svg);}
+.route::before{background-image: url(https://xcx.yzw0525.com/images/route.svg);background-size: 80%;}
+.metro::before{background-image: url(https://xcx.yzw0525.com/images/metro.svg);}
+.metro{border-bottom:none;}

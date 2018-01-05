@@ -1,0 +1,8 @@
+<!--Personal.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="Personal">
+  <navigator class="PersonalLi purl" url="/pages/Personal/appointment/appointment"  open-type="navigate">我的预约</navigator>
+  <navigator wx:if="{{userinfo.Invitationcode}}" class="PersonalLi purl" url="/pages/Personal/exchange/exchange" open-type="navigate">我的兑换</navigator>
+  <view wx:if="{{userinfo.Invitationcode}}" class="PersonalLi InvitationCode">我的邀请码：<text>{{userinfo.Invitationcode}}</text><view class="copybtn" data-InvitationCode="{{userinfo.Invitationcode}}" bindtap="onCopy">点击复制</view></view> 
+</view>
+<template is="foot" />

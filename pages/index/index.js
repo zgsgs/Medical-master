@@ -47,7 +47,8 @@ Page({
   onShareAppMessage: function (res) {//转发默认设置
    
   },
-  onMakePhone: function () {
+  //测试合并冲突
+  WWonMakePhone: function () {
     wx.makePhoneCall({
       phoneNumber: appInstance.globalData.yebotel
     })

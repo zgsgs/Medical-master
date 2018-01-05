@@ -1,0 +1,4 @@
+<!--pages/noopen/noopen.wxml-->
+<view class="noopen">
+<image src="https://xcx.yzw0525.com/images/NotOpen.png" mode="widthFix" class="main1-head"></image>
+</view>

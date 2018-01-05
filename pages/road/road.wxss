@@ -1,0 +1,10 @@
+/* road.wxss */
+.road{width: 100%;padding: 0 3%;background-color: #fff;padding-bottom:5em;}
+.road .title{line-height: 80rpx;font-size:32rpx;color: #f7a23c;}
+.address,.route{padding-left: 15%;position: relative;}
+.address .title,.route .title{color: #333;line-height: 60rpx;}
+.address .p,.route .p{color: #888;font-size:32rpx;}
+.address::before,.route::before{content: "";width: 60rpx;height: 60rpx;position: absolute;left: 1%;top: 10%;background-position: center;background-repeat: no-repeat;background-size: 80%;}
+.address::before{background-image: url(https://xcx.yzw0525.com/images/address.svg);}
+.route::before{background-image: url(https://xcx.yzw0525.com/images/route.svg);}
+.route{margin-top: 40rpx;}

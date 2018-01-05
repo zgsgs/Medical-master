@@ -1,0 +1,19 @@
+<!--pages/Personal/activity/activity.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="activitylist" wx:for="{{activityList}}" wx:key="{{index}}">
+  <view class="litpic">
+    <image src="{{activityList[index].litpic}}" mode="center"></image>
+  </view>
+  <view class="title">{{activityList[index].title}}</view>
+  <view class="integral">参与可获积分奖励：{{activityList[index].integral}}</view>
+  <view class="time">{{activityList[index].datetime}}分</view>
+  <navigator url="activityinfos?id={{activityList[index].id}}" class="navigator_btn">查看详情</navigator>
+</view>
+<view class="More" wx:if="{{isMore}}">
+  <text style="background-color:#f5f5f5;">暂无更多信息</text>
+</view>
+<view class="weui-loadmore" wx:if="{{isloadmore}}">
+    <icon class="weui-loading"/> 
+    <text class="weui-loadmore__tips">正在加载</text>
+</view>
+<template is="foot" />

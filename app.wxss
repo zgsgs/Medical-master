@@ -1,0 +1,61 @@
+/**app.wxss**/
+view,form{box-sizing: border-box;}
+page{font-size: 12px;background-color: #f5f5f5;width: 100%;height: 100%;font-family: "微软雅黑";color: #333;}
+.clear::after{content: "";display: block; width: 0;height: 0;clear: both;}
+.container {width: 100%;height: 100%; font-family: "微软雅黑";color: #333;position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+image{display: block;width: 100%;height: 100%;}
+.banner {width: 100%;height:26.5%;}
+.loadnull{width: 65%;margin: 1.5em auto;line-height: 1.6em;font-size: 14px;text-align: center;border-top: 1px solid #E5E5E5;}
+.loadnull text{position: relative;top: -0.9em;padding: 0 .55em;background-color: #FFFFFF;color: #999999;display: inline-block;vertical-align: middle;}
+.foot{width: 100%; height: 100rpx;position: fixed;bottom: 0;z-index: 99999;}
+.foot .foot_btn{display: block; width:40%; height: 100%;float: left;text-align: center;line-height: 100rpx;font-size:32rpx;color: #fff;position: relative;padding-left: 5%;box-sizing:border-box;border-radius: 0;padding-right: 0;}
+.foot .foot_btn::before{content: "";display: block;width: 60rpx;height: 60rpx;position: absolute;top: 50%;left: 50%;background-size: 90%;background-repeat: no-repeat;margin-top:-25rpx;margin-left: -110rpx; background-position: center;}
+.foot .foot_btn.kswz::before{background-image: url(https://xcx.yzw0525.com/images/index_14.svg)}
+.foot .foot_btn.kswz{background-color: #39cdac;}
+.foot .foot_btn.ljyy::before{background-image: url(https://xcx.yzw0525.com/images/index_15.svg)}
+.foot .foot_btn.ljyy{background-color: #f7a23c;}
+.foot .foot_btn.grzx::before{background-image: url(https://xcx.yzw0525.com/images/foot_grzx.svg)}
+.foot .foot_btn.grzx{background-color: #f7a23c;}
+.foot .foot_btn.index{width: 20%;color: #39cdac;padding: 0;padding-top: 25rpx;font-size: 28rpx; background-color: #fff;}
+.foot .foot_btn.index::before{ background-image: url(https://xcx.yzw0525.com/images/icon_index.svg);top: 5rpx;left: 50%;margin-top:0;margin-left: -25rpx;}
+
+.hospitalinfo{height: 7em;font-size: 26rpx;background-color: #fff;padding:0.5em 3% 3%;margin: 0.5em auto;}
+.hospitalinfo .h-i-left{width: 65%;float: left;}
+.hospitalinfo .h-i-left view{line-height: 2em;height: 2em;overflow: hidden;position: relative;padding-left: 2em;}
+.hospitalinfo .h-i-left view.jztime{font-size: 26rpx;}
+.hospitalinfo .h-i-left view::before{content: ""; display: block;width: 1.8em;height: 1.8em;position: absolute;top: 0;left: 0;background-size: 80%;background-position: center;background-repeat: no-repeat;}
+.hospitalinfo .h-i-left view.tel::before{background-image: url(https://xcx.yzw0525.com/images/doctlist_15.svg);}
+.hospitalinfo .h-i-left view.address::before{background-image: url(https://xcx.yzw0525.com/images/doctlist_16.svg);}
+.hospitalinfo .h-i-left view.jztime::before{background-image: url(https://xcx.yzw0525.com/images/doctlist_17.svg);}
+.hospitalinfo .h-i-right{width: 35%;height: 6em;float: right;text-align:center;}
+.hospitalinfo .h-i-right image{height: 6em;width: 6em;margin:auto;}
+
+.phone{width: 80rpx;height: 80rpx;position: fixed;bottom: 150rpx;right: 5rpx;background-color:#39cdac;background-image:url(https://xcx.yzw0525.com/images/ico_phone.svg);background-size: 70%;background-repeat: no-repeat;background-position: center; border-radius: 50%;}
+
+input.hidden{display: none;}
+
+.More{width: 60%;line-height: 40rpx;text-align: center;margin: 20rpx auto;color: #666;position: relative;}
+.More text{padding: 0 15rpx;position:relative;z-index: 2;background: #fff;}
+.More::before{content: ""; width: 100%;height: 0;border-top: 1px solid #E5E5E5;position: absolute;left: 0;top: 50%;}
+.weui-loadmore {width: 65%;margin: 1.5em auto;line-height: 1.6em;font-size: 14px;text-align: center;}
+.weui-loading {width: 20px;height: 20px;display: inline-block;vertical-align: middle;-webkit-animation: weuiLoading 1s steps(12, end) infinite;animation: weuiLoading 1s steps(12, end) infinite;
+background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+background-size: 100%;    
+}
+.weui-loadmore__tips {display: inline-block;vertical-align: middle;}
+@-webkit-keyframes weuiLoading {
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+@keyframes weuiLoading {
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}

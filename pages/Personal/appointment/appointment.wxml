@@ -1,0 +1,14 @@
+<!--pages/Personal/appointment/appointment.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="appointmentlist clear" wx:for="{{appointmentlist}}" wx:key="{{index}}">
+  <view class="li">预约姓名：<text>{{appointmentlist[index].patients}}</text></view>
+  <view class="li">预约电话：<text>{{appointmentlist[index].tel}}</text></view>
+  <view class="li">检查/病种/专家：<text>{{appointmentlist[index].yydoctor}}</text></view>
+  <view class="li">描述：<text>{{appointmentlist[index].content==null ? "无":appointmentlist[index].content}}</text></view>
+  <view class="li yydate">{{appointmentlist[index].yydate}}</view>
+  <view bindtap="onCancelAppointment" wx:if="{{appointmentlist[index].is_to_hospital==0}}" class="cancel_btn" data-registerid="{{appointmentlist[index].id}}" data-index="{{index}}">取消预约</view>
+  <view class="li" class="cancel_btn ongoing" wx:if="{{appointmentlist[index].is_to_hospital==1}}" >就诊中</view>
+  <view class="li" class="cancel_btn cancel" wx:if="{{appointmentlist[index].is_to_hospital==2}}" >已取消</view>
+  <view class="li" class="cancel_btn fail" wx:if="{{appointmentlist[index].is_to_hospital==3}}" >失约</view>
+</view>
+<template is="foot" />

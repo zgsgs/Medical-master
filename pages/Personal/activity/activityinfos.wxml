@@ -1,0 +1,31 @@
+<!--pages/Personal/activity/activityinfos.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="activityinfos" wx:if="{{!activityinfo==''}}">
+  <image src="{{activityinfo.litpic}}" mode="widthFix" style="max-height:30%;"></image>
+  <view class="title">{{activityinfo.title}}</view>
+  <view class="infos">
+    <view class="integral">赠送积分：{{activityinfo.integral}}分</view>
+    <view class="atime">活动时间：{{activityinfo.datetime}}</view>
+    <view class="location">活动地点：<text>{{activityinfo.address}}</text></view>
+    <view class="hotline">活动热线：
+      <text>{{activityinfo.tel}}</text> 
+      <view class="tel_btn" data-tel="{{activityinfo.tel}}" bindtap="onMakePhone"></view>
+    </view>
+  </view>
+  <!--infos end-->
+  <view class="body">
+    <view class="body-t">活动介绍</view>
+    <view class="body-c">
+      <import src="../../../plug-ins/wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+  </view>
+  <template is="foot" />
+</view>
+<view class="More" wx:if="{{isMore}}">
+  <text style="background-color:#f5f5f5;">暂无数据</text>
+</view>
+<view class="weui-loadmore" wx:if="{{isloadmore}}">
+    <icon class="weui-loading"/> 
+    <text class="weui-loadmore__tips">正在加载</text>
+</view>

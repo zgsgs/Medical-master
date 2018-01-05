@@ -1,0 +1,27 @@
+<!--pages/Personal/exchange/exchangeinfos.wxml-->
+<view class="exchangesuccess" wx:if="{{OrdersInfos!=''}}">
+<view class="shoppinginfos">
+  <view class="title" hover-class='s-hover'>订单编号<text>{{OrdersInfos.OrderNumber}}</text></view>
+  <view class="title" hover-class='s-hover'>商品名称<text>{{OrdersInfos.shoppingname}}</text></view>
+  <view class="integral" hover-class='s-hover'>商品积分<text>{{OrdersInfos.PresentIntegral}}积分</text></view>
+  <view class="exchangetimes" hover-class='s-hover'>兑换时间<text>{{OrdersInfos.created_at}}</text></view>
+</view>
+<view class="shoppinginfos">
+  <view hover-class='s-hover'>领取方式<text>上门自取</text></view>
+  <view hover-class='s-hover'>领取地址<text>无锡市五爱路85号无锡医博中医肛肠医院</text></view>
+  <view hover-class='s-hover' wx:if="{{OrdersInfos.state == 0}}">领取状态<text> 未领取</text></view>
+  <view hover-class='s-hover' wx:if="{{OrdersInfos.state == 1}}">领取状态<text> 已领取</text></view>
+  <view hover-class='s-hover' wx:if="{{OrdersInfos.state == 1}}">领取时间<text> {{OrdersInfos.updated_at}}</text></view>
+  <view hover-class='s-hover' wx:if="{{OrdersInfos.state == 3}}">订单状态<text> 已撤销订单</text></view>
+  <view hover-class='s-hover' wx:if="{{OrdersInfos.state == 3}}">撤销时间<text> {{OrdersInfos.updated_at}}</text></view>
+</view>
+</view>
+<view class="More" wx:if="{{isMore}}">
+  <text style="background:none;">未查询到信息</text>
+</view>
+<view class="weui-loadmore" wx:if="{{isloadmore}}">
+  <icon class="weui-loading"/> 
+  <text class="weui-loadmore__tips">正在加载</text>
+</view>
+<view wx:if="{{OrdersInfos.state == 0}}" data-OrderNumber="{{OrdersInfos.OrderNumber}}" class="backhome" bindtap="onCancelOrders">取消订单</view>
+<navigator wx:else class="backhome" delta='1' open-type="navigateBack">返回</navigator>

@@ -1,0 +1,14 @@
+<!--pages/activity/qcsltc/qcsltc.wxml-->
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_01.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_02.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_03.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_04.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_05.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_06.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_07.jpg?" mode="widthFix"></image>
+<image src="https://xcx.yzw0525.com/images/activity_qcsltc_08.jpg?" mode="widthFix"></image>
+
+<navigator url="/pages/online/online" open-type="navigate" class="reservation" hover-class="nav-hover">立即预约</navigator>
+
+<import src="/pages/public.wxml"/>
+<template is="foot" />

@@ -1,0 +1,7 @@
+/* index.wxss */
+.Personal{background-color: #fff;}
+.PersonalLi{line-height: 80rpx;font-size: 30rpx;color: #555;position: relative;padding: 0 3%;}
+.PersonalLi::after{content: "";display: block;width: 96%;height: 0;border-top:1px solid #eeeeee;position: absolute;bottom: 0;left: 2%;}
+.Personal .purl::before{content: "";position: absolute;right: 2%;top: 27.5rpx; width: 25rpx;height: 25rpx;border-width: 2px 2px 0 0;border-color: #C8C8CD;border-style: solid;transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);}
+.InvitationCode text{color: #888;}
+.copybtn{position: absolute;top: 20rpx;right: 1.5%; width: 120rpx;line-height: 45rpx;font-size: 24rpx;background-color: #39cdac;color: #fff;padding: 0 10rpx;border-radius: 10rpx;}

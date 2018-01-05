@@ -1,0 +1,15 @@
+<!--pages/register/register.wxml-->
+<view class="register">
+  <form bindsubmit="MyfromSubmit" report-submit="true">
+    <input type="text" placeholder="您的姓名" name="patients" maxlength="32" placeholder-class="input-placeholder" class="from-input patients" />
+    <input type="text" placeholder="您的手机号" name="tel" maxlength="32" placeholder-class="input-placeholder" class="from-input tel" />
+    <picker mode="date" end="{{today}}"  value="{{today}}" name="birthday"  bindchange="bindDateChange" class="from-input birthday">
+      <view class="dateoption">
+        您的生日：{{today}}
+      </view>
+    </picker>
+    <input type="text" placeholder="您的邀请码（非必填）" name="Invitationcode" maxlength="32" placeholder-class="input-placeholder" class="from-input Invitationcode" />
+    <button size="default" loading="{{loading}}" class="online-submit" form-type="submit">加密提交</button>
+  </form>
+</view>
+

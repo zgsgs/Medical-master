@@ -1,0 +1,32 @@
+<!--public.wxml-->
+<template name="banner">
+  <swiper class="banner" indicator-dots="true" indicator-color="rgba(0, 0, 0, .5)" indicator-active-color="#ffffff" autoplay="true" circular="true">
+    <swiper-item>
+      <image mode="aspectFill" src="https://xcx.yzw0525.com/images/index_01.jpg" class="slide-image" ></image>
+    </swiper-item>
+    <swiper-item>
+      <image mode="aspectFill" src="https://xcx.yzw0525.com/images/banner2.jpg" class="slide-image" ></image>
+    </swiper-item>
+  </swiper>
+  <!--banner end-->
+</template>
+<template name="foot">
+  <view style="width:100%;height:5em;"></view>
+  <view class="foot">
+    <navigator url="/pages/index/index" class="foot_btn index" hover-class="none" open-type="reLaunch">首页</navigator>
+    <button open-type="contact" class="foot_btn kswz" >快速问诊</button>
+    <navigator url="/pages/Personal/index" class="foot_btn grzx" hover-class="none" open-type="reLaunch">个人中心</navigator>
+  </view>
+</template>
+<template name="hospitalinfo">
+  <view class="hospitalinfo">
+    <view class="h-i-left">
+      <view class="tel" bindtap="onMakePhone">咨询热线：0510-85889555</view>
+      <view class="address">地址：无锡市五爱路85号</view>
+      <view class="jztime">接诊时间：周一至周日 8：00-20：00</view>
+    </view>
+    <view class="h-i-right">
+      <image mode="aspectFill" src="https://xcx.yzw0525.com/images/doctlist_18.jpg" class="slide-image" ></image>
+    </view>
+  </view>
+</template>

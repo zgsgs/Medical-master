@@ -1,0 +1,128 @@
+<!--index.wxml-->
+<view class="container">
+  <import src="/pages/public.wxml"/>
+  <!--banner end-->
+  <view class="matrix">
+    <button open-type="contact" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn kswz">
+        <icon class="kswz"/>
+        <view class="title">快速问诊</view>
+        <view class="info">足不出户 咨询专家</view>
+      </view>
+    </button>
+    <navigator url="/pages/online/online" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn yygh">
+        <icon class="yygh"/>
+        <view class="title">预约挂号</view>
+        <view class="info">无需排队 免费挂号</view>
+      </view>
+    </navigator>
+    <navigator url="/pages/about/about" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn gtpp">
+        <icon class="gtpp"/>
+        <view class="title">肛泰品牌</view>
+        <view class="info">足不出户 咨询专家</view>
+      </view>
+    </navigator>
+    <navigator url="/pages/user/user" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn user">
+        <icon class="user"/>
+        <view class="title">志愿者协会</view>
+        <view class="info">赢取积分 兑换好礼</view>
+      </view>
+    </navigator>
+  </view>
+  <!--matrix end-->
+  <view class='activity'>
+    <navigator url="/pages/activity/wtwjjc/wtwjjc" open-type="navigate" hover-class="nav-hover">
+      <image src="https://xcx.yzw0525.com/images/index_activity_01.jpg?" mode="widthFix"></image>
+    </navigator>
+    <navigator url="/pages/activity/wtcjjc/wtcjjc" open-type="navigate" hover-class="nav-hover">
+      <image src="https://xcx.yzw0525.com/images/index_activity_02.jpg?" mode="widthFix"></image>
+    </navigator>
+    <navigator url="/pages/activity/qcsltc/qcsltc" open-type="navigate" hover-class="nav-hover">
+      <image src="https://xcx.yzw0525.com/images/index_activity_03.jpg?" mode="widthFix"></image>
+    </navigator>
+  </view>
+  <!-- activity end-->
+  <view class="diagnosis">
+    <view class="diagnosis-body gck">
+      <view class="d-title">疾病问医生</view>
+      <view class="d-image">
+        <navigator url="/pages/doctlist/doctlist?diagnosisType=gc" class="d-btn">
+          <image src="https://xcx.yzw0525.com/images/index_gck.jpg" mode="widthFix"></image>
+        </navigator>
+      </view>
+       <view class="d-image">
+        <navigator url="/pages/doctlist/doctlist?diagnosisType=wc" class="d-btn">
+          <image src="https://xcx.yzw0525.com/images/index_wck.jpg"  mode="widthFix"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!--diagnosis end-->
+  <view class="ask-icon">
+    <view class="ask-title">一键咨询</view>
+    <swiper class="ask-icon-swiper" indicator-color="rgba(0, 0, 0, .5)" indicator-active-color="#ffffff" autoplay="true" circular="true">
+      <swiper-item>
+        <button open-type="contact" class="ask-body wzc">
+          <view class="wzc icon"></view>
+          <view class="a-title">问痔疮</view>
+        </button >
+        <button open-type="contact" class="ask-body wbx">
+        <view class="wbx icon"></view>
+          <view class="a-title">问便血</view>
+        </button>
+        <button open-type="contact" class="ask-body wgl">
+        <view class="wgl icon"></view>
+          <view class="a-title">问肛裂</view>
+        </button>
+        <button open-type="contact" class="ask-body wbm">
+          <view class="wbm icon"></view>
+          <view class="a-title">问便秘</view>
+        </button>
+      </swiper-item>
+      <swiper-item>
+       
+        <button open-type="contact" class="ask-body wcy">
+        <view class="wcy icon"></view>
+          <view class="a-title">问肠炎</view>
+        </button>
+        <button open-type="contact" class="ask-body wglou">
+        <view class="wglou icon"></view>
+          <view class="a-title">问肛瘘</view>
+        </button>
+        <button open-type="contact" class="ask-body wjg">
+        <view class="wjg icon"></view>
+          <view class="a-title">问价格</view>
+        </button>
+        <button open-type="contact" class="ask-body wqt">
+        <view class="wqt icon"></view>
+          <view class="a-title">问其他</view>
+        </button>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--ask-icon end-->
+  <view class="comment">
+    <view class="c-title">真实评论</view>
+    <view class="c-list" wx:for="{{commentlist}}" wx:key="index">
+      <view class="c-l-face"><image src="{{commentlist[index].face}}"></image></view>
+      <view class="c-l-body">
+        <view class="c-l-b-head">
+          <view class="c-l-b-h-name">{{commentlist[index].title}}</view>
+          <view class="c-l-b-h-zan" data-zannum="{{commentlist[index].zan}}" data-index="{{index}}" bindtap="onAddZanNum">{{commentlist[index].zan}}</view>
+        </view>
+        <view class="c-l-b-content">{{commentlist[index].contetn}}</view>
+      </view>
+    </view>
+    <!--c-list end-->
+    <!--c-list end-->
+    <view style="clear: both;"></view>
+    <view bindtap="onLoadMoreDoctList" wx:if="{{is_more}}"  class="more">展开更多评价</view>
+    <view wx:if="{{is_loadnull}}"  class="loadnull"><text>暂无更多数据</text></view>
+  </view>
+  <!--comment end-->
+  <template is="foot" />
+  <view class="phone" bindtap="onMakePhone"></view>
+</view>

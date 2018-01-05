@@ -1,0 +1,53 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.2",
+	"appid": "wxc58e401a7fca8e64",
+	"projectname": "%E6%97%A0%E9%94%A1%E5%8C%BB%E5%8D%9A%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "swt",
+					"pathName": "pages/swt/swt",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wj",
+					"pathName": "pages/activity/wtwjjc/wtwjjc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wtcjjc",
+					"pathName": "pages/activity/wtcjjc/wtcjjc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "qcsltc",
+					"pathName": "pages/activity/qcsltc/qcsltc",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,49 @@
+<!--pages/shopping/shopping.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="shopping">
+  <view class="head" wx:if="{{userinfos != null}}">
+    <view class="nickface">
+      <image src="{{userinfos.facelink}}" mode="widthFix"></image>
+    </view>
+    <view class="nickinfo">
+      <view class="name">{{userinfos.nickname}}</view>
+      <view class="integral">当前积分：<text>{{userinfos.integral==null? 0 : userinfos.integral}}分</text></view>
+    </view>
+  </view>
+  <!--head end-->
+  <view class="shopping_list">
+    <view class="list_head" wx:if="{{shoppingRule!=''}}" bindtap="onUpdown">
+      <view class="screen" >{{screenkey==''?'全部商品': shoppingRule[screenkey].name}}<icon class="down" /></view>
+    </view>
+    <view class="screen_list" catchtap="onUpdown" hidden="{{is_down}}">
+      <view class="screen_li" catchtap="onScreen" >
+        全部商品
+      </view>
+      <view class="screen_li" wx:for="{{shoppingRule}}" wx:key="{{index}}" catchtap="onScreen" data-Screen="{{shoppingRule[index].rule}}" data-screenkey="{{index}}">
+        {{shoppingRule[index].name}}
+      </view>
+    </view>
+    <!--list_head end-->
+    <view class="shopping_li" wx:for="{{shoppingList}}" wx:key="index">
+      <view class="shopping_img">
+        <view class="image"><image src="{{shoppingList[index].litpic}}" mode="widthFix"></image></view>
+      </view>
+      <view class="shopping_info">
+        <view class="name"> {{shoppingList[index].title}}</view>
+        <view class="integral"> {{shoppingList[index].integral}}分 </view>
+        <view class="Price"> 市场价：{{shoppingList[index].price}}元 </view>
+        <navigator url="shoppinginfos?id={{shoppingList[index].id}}" class="exchange_btn">兑换</navigator>
+      </view>
+    </view>
+    <!--shopping_li end-->
+  </view>
+  <view class="More" wx:if="{{isMore}}">
+    <text style="background:#f5f5f5;">暂无更多信息</text>
+  </view>
+  <view class="weui-loadmore" wx:if="{{isloadmore}}">
+      <icon class="weui-loading"/> 
+      <text class="weui-loadmore__tips">正在加载</text>
+  </view>
+  <!--shopping_list end-->
+</view>
+<template is="foot" />

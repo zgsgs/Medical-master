@@ -1,0 +1,7 @@
+/* pages/Personal/activity/activity.wxss */
+.activitylist{width: 96%;margin: 20rpx auto 10rpx;background: #fff;padding: 3%;position: relative;}
+.activitylist .litpic{height: 250rpx;}
+.activitylist .title{font-size: 30rpx;line-height: 50rpx;margin-top: 10rpx; color: #333;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;}
+.activitylist .time{font-size: 28rpx;line-height: 50rpx;color: #888888;}
+.activitylist .integral{font-size: 28rpx;line-height: 60rpx;color: #39cdac;}
+.activitylist .navigator_btn{position: absolute;bottom: 30rpx;right: 50rpx;line-height: 60rpx;padding: 0 25rpx;background: #39cdac;color: #fff;font-size: 30rpx;border-radius: 10rpx;}

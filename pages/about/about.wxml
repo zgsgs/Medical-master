@@ -1,0 +1,43 @@
+<!--about.wxml-->
+<view class="container">
+  <import src="/pages/public.wxml"/>
+  <view class="about clear">
+    <view class="main">
+      <image src="https://xcx.yzw0525.com/images/about-main01.jpg" mode="widthFix" class="main1-head"></image>
+      <view class="text">无锡医博中医肛肠医院坐落于无锡市五爱路85号以人文关怀为核心，平价收费为标准，凭借对肛肠疾病的合理解析，科学规范化的管理，过硬的技术水平，步于肛肠医学领域。医博是肛肠专科品牌。自2004年创立以来，为患者提供更加舒适的医疗服务，并卓有建树。</view>
+    </view>
+    <view class="main">
+      <image src="https://xcx.yzw0525.com/images/about-main02.jpg" mode="widthFix" class="main1-head"></image>
+      <view class="main2-tab">
+        <navigator>专科医院</navigator>
+        <navigator>实力医师</navigator>
+        <navigator class="last">平价收费</navigator>
+      </view>
+      <view class="textimg">
+        <image src="https://xcx.yzw0525.com/images/about_05.jpg" mode="widthFix" class="main1-head"></image>
+        <view class="text">无锡医博中医肛肠医院作为无锡市医保定点单位，市红十字会团体会员单位，交通便利，环境优美。隶属于我国知名的医博肛肠连锁医院集团，为其旗下18家肛肠专科连锁医院之一，医院汇集了一批国内肛肠学术专业顶尖专家团队。
+医院秉承“一切为了患者，为了患者一切”的办院宗旨，男女分诊，坚持中西医结合的治疗体系；致力于肛肠医学事业，秉承“以人为本，精益求精，用心服务”的人文精神，努力实践“肛泰品质，服务全国”的核心价值观。
+        </view>
+      </view>
+      <view class="zx-btn">
+        <view class="nvfz">男女分诊</view>
+        <view class="ydyzl">一对一诊疗</view>
+        <view class="wxymz">温馨夜门诊</view>
+        <view class="ysbh">隐私保护</view>
+      </view>
+    </view>
+    <view class="main main-hj">
+      <image src="https://xcx.yzw0525.com/images/about-main03.jpg" mode="widthFix" class="main1-head"></image>
+      <image src="https://xcx.yzw0525.com/images/about-hj1.jpg" mode="widthFix" class="main1-head"></image>
+      <image src="https://xcx.yzw0525.com/images/about-hj2.jpg" mode="widthFix" class="main1-head"></image>
+      <image src="https://xcx.yzw0525.com/images/about-hj3.jpg" mode="widthFix" class="main1-head"></image>
+      <image src="https://xcx.yzw0525.com/images/about-hj4.jpg" mode="widthFix" class="main1-head"></image>
+      <image src="https://xcx.yzw0525.com/images/about-hj5.jpg" mode="widthFix" class="main1-head"></image>
+      <image src="https://xcx.yzw0525.com/images/about-hj6.jpg" mode="widthFix" class="main1-head"></image>
+      <image src="https://xcx.yzw0525.com/images/about-hj7.jpg" mode="widthFix" class="main1-head"></image>
+    </view>
+  </view>
+  <!--about end-->
+  <template is="hospitalinfo" />
+  <template is="foot" />
+</view>

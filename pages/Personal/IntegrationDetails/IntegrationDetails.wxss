@@ -1,0 +1,8 @@
+/* pages/Personal/IntegrationDetails/IntegrationDetails.wxss */
+page{background-color: #fff;}
+.scrollview{width: 100%;height: 100%;}
+.DetailsList{width: 96%;height: 100rpx;border-bottom: 1px solid #eee;padding: 20rpx auto;margin:auto; position: relative;}
+.DetailsList .explain{line-height: 50rpx;color: #555555;font-size: 32rpx;}
+.DetailsList .datetimes{line-height: 50rpx;font-size: 28rpx;color: #888;}
+.DetailsList .integral{position: absolute;right: 0;top:0;line-height: 100rpx;color: #39cdac;font-size: 30rpx;}
+p,div{display: block;}

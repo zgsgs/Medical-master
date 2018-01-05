@@ -1,0 +1,13 @@
+/* pages/register/register.wxss */
+.register{width: 100%;height: 100%;background-color: #ffffff;padding: 8%;}
+.register .from-input{border-bottom: solid 1px #eeeeee;height: 80rpx;font-size: 32rpx;position: relative;padding-left: 50rpx;}
+.input-placeholder{color: #c6c6c6;font-size: 30rpx;}
+.register .from-input .dateoption{color: #c6c6c6;font-size: 30rpx;font-weight: unset;line-height: 80rpx;}
+.register .from-input::before{content: "";display: block;width: 40rpx;height: 40rpx;position: absolute;left: 5rpx;top: 20rpx;background-position: center;background-size: 100% auto;background-repeat:no-repeat;}
+
+.register .from-input.patients::before{background-image: url(https://xcx.yzw0525.com/images/register_patients.svg);}
+.register .from-input.tel::before{background-image: url(https://xcx.yzw0525.com/images/register_tel.svg);}
+.register .from-input.birthday::before{background-image: url(https://xcx.yzw0525.com/images/register_birthday.svg);}
+.register .from-input.Invitationcode::before{background-image: url(https://xcx.yzw0525.com/images/register_Invitationcode.svg);}
+
+.online-submit{width: 75%;margin: 60rpx auto;background-color: #39cdac;color: #fff;font-size: 1.4em;height: 90rpx;line-height:90rpx;letter-spacing: 2px;}

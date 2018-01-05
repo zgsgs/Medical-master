@@ -1,0 +1,42 @@
+<!--pages/about/contact/contact.wxml-->
+<import src="/pages/public.wxml"/>
+<view class="main ContactInformation">
+  <view class="title">联系方式</view>
+  <image src="https://xcx.yzw0525.com/images/about_05.jpg" mode="widthFix" class="main1-head"></image>
+  <view class="description">如果您需要联系志愿者协会，除直接到无锡医博中医肛肠医院一楼服务台外，还可选择以下方式：</view>
+  <view class="Information">
+    <view class="tel">
+      <view class="t">志愿者专线</view>
+      <view class="d">0510-85889555</view>
+    </view>
+    <view class="weibo">
+      <view class="t">志愿者官方微博</view>
+      <view class="d">无锡肛泰医院微博</view>
+    </view>
+    <view class="wechat">
+      <view class="t">志愿者官方微信</view>
+      <view class="d">无锡肛泰医院</view>
+    </view>
+    <view class="qq">
+      <view class="t">志愿者专属客服QQ</view>
+      <view class="d">514814493</view>
+    </view>
+  </view>
+</view>
+<view class="main ContactInformation">
+  <view class="title">来院路线</view>
+  <map id="map" longitude="120.288650" latitude="31.569670" scale="17" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" show-location="true" style="width: 100%; height: 300px;"></map>
+  <view class="address">
+    <view class="t">医院地址</view>
+    <view class="p">无锡市五爱路85号</view>
+  </view>
+  <view class="route">
+    <view class="t">乘车路线</view>
+    <view class="p">20、82、10、1、508、73、211、112梁溪大桥（建设银行）站下，地铁2号线梁溪大桥站下</view>
+  </view>
+  <view class="route metro">
+    <view class="t">地铁路线</view>
+    <view class="p">2号线梁溪大桥站下</view>
+  </view>
+</view>
+<template is="foot" />

@@ -48,7 +48,7 @@ Page({
    
   },
   //测试合并冲突
-  WWonMakePhone: function () {
+  onMakePhone: function () {
     wx.makePhoneCall({
       phoneNumber: appInstance.globalData.yebotel
     })
